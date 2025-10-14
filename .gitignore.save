@@ -1,0 +1,35 @@
+x# --- OS & editors ---
+.DS_Store
+.vscode/
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+
+# --- Notebooks ---
+*.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# --- Envs & secrets ---
+.env
+.env.*
+*.env
+
+# --- Data: exclude large/local/proprietary ---
+data/serving/
+data/raw/
+app/data/raw/
+**/*.duckdb
+data/**/*.csv
+data/**/*.parquet
+data/**/*.json
+data/**/*.jsonl
+
+# (NOTE) We do NOT ignore CSVs in repo root so small demo CSVs are still tracked.
+# If you decide to ignore ALL CSVs everywhere, add: **/*.csv
